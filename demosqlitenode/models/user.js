@@ -3,8 +3,8 @@
 * bootstrap de twitter y el motor de plantillas jade
 */
 
-var sqlite3 = require('sqlite3').verbose(),//necesario para utilizar sqlite3
-db = new sqlite3.Database('blogNode'),//creamos la base de datos llamada blogNode si no existe
+var sqlite3 = require('sqlite3').verbose();//necesario para utilizar sqlite3
+db = new sqlite3.Database('blogNode');//creamos la base de datos llamada blogNode si no existe
 UserModel = {};//objeto para exportar y manejar la información del modelo
 
 //funcion para crear la tabla usuarios
