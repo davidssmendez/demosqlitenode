@@ -4,7 +4,7 @@ var app = express();
 app.get('/', function (req, res) {
   var sqlite3 = require('sqlite3').verbose();
 //var db = new sqlite3.Database(':memory:');
-var db = new sqlite3.Database('blogNode');//creamos la base de datos llamada blogNode si no existe
+var db = sqlite3.Database('blogNode');//creamos la base de datos llamada blogNode si no existe
 db.serialize(function() {
 
   db.run('CREATE TABLE IF NOT EXISTS lorem (info TEXT)');
